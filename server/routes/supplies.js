@@ -13,7 +13,7 @@ const __dirName = path.dirname(__fileName)
 const router = express.Router()
 
 router.get('/', (req, res) => {
-  res.status(200).json(giftData)
+  res.status(200).json(supplydata)
 })
 //responds with 200 and sends the gift html
 router.get('/:supplyId', (req, res) => {

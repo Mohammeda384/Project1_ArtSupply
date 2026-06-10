@@ -7,7 +7,7 @@ const renderGifts = async () => {
 
     if (data) {
 
-        data.map(supply => {
+        data.map(gift => {
             const card = document.createElement('div')
             card.classList.add('card')
 
@@ -17,18 +17,17 @@ const renderGifts = async () => {
             const bottomContainer = document.createElement('div')
             bottomContainer.classList.add('bottom-container')
 
-            topContainer.style.backgroundImage = `url(${supply.image})`
+            topContainer.style.backgroundImage = `url(${gift.image})`
 
             const name = document.createElement('h3')
-            name.textContent = supply.name
+            name.textContent = gift.name
             bottomContainer.appendChild(name)
 
-           
-
+            
             const link = document.createElement('a')
             link.textContent = 'Read More >'
             link.setAttribute('role', 'button')
-            link.href = `/supplies/${supply.id}`
+            link.href = `/supplies/${gift.id}`
             bottomContainer.appendChild(link)
 
             card.appendChild(topContainer)

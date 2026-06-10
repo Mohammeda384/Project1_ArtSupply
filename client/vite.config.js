@@ -7,7 +7,7 @@ export default defineConfig({
   },
   server: {
     proxy: {
-      '/gifts': {
+      '/supplies': {
         target: 'http://localhost:3001'
       }
     }
