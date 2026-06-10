@@ -9,7 +9,7 @@ const headerLogo = document.createElement('img')
 headerLogo.src = "/logo.png"
 
 const headerTitle = document.createElement('h1')
-headerTitle.text = "UnEarthed"
+headerTitle.textContent = "ArtSupplies"
 
 headerLeft.appendChild(headerLogo)
 headerLeft.appendChild(headerTitle)
